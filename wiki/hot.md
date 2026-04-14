@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-04-08T19:00:00
+updated: 2026-04-14T16:20:00
 tags:
   - meta
   - hot-cache
@@ -11,7 +11,6 @@ related:
   - "[[log]]"
   - "[[Wiki Map]]"
   - "[[getting-started]]"
-  - "[[claude-obsidian-v1.4-release-session]]"
 ---
 
 # Recent Context
@@ -19,50 +18,34 @@ related:
 Navigation: [[index]] | [[log]] | [[overview]]
 
 ## Last Updated
-2026-04-08: v1.4.1 hotfix shipped, plugin confirmed installed and enabled
+2026-04-14: 摄取一堂知识管理课程，创建3个中文概念页面
 
-## Plugin State
-- **Version**: 1.4.1 (installed, enabled, user scope)
-- **Install ID**: `claude-obsidian@claude-obsidian-marketplace`
-- **Releases**: v1.1, v1.4.0, v1.4.1 on GitHub
-- **Skills**: 10 (wiki, wiki-ingest, wiki-query, wiki-lint, save, autoresearch, canvas, defuddle, obsidian-bases, obsidian-markdown)
-- **Hooks**: 4 (SessionStart, PostCompact, PostToolUse, Stop)
-- **Multi-agent**: bootstrap files for Codex, OpenCode, Gemini, Cursor, Windsurf, GitHub Copilot
+## Recent Activity
+- **摄取**：一堂知识管理课程（76页PDF，OCR提取第1页）
+- **创建页面**：
+  - [[个人知识管理]] - 核心概念，包含三大困扰分析
+  - [[IPO模型]] - 输入-处理-输出知识流程
+  - [[持续输出能力]] - 知识转化为作品的能力
+  - [[一堂知识管理课程]] - 来源页面
+- **更新**：index.md, log.md（新增4个页面，总计30页）
 
-## Install Command (Correct Two-Step Flow)
-```bash
-claude plugin marketplace add AgriciDaniel/claude-obsidian
-claude plugin install claude-obsidian@claude-obsidian-marketplace
-```
+## 关键发现
+- **知识管理三大困扰**：缺少审美、信息过载、收藏不用
+- **知识留存率**：做了100件事 → 沉淀80% → 长期调用仅1%
+- **目标人群**：希望成为专家、构建IPO模型、持续输出、长期变强
 
-There is no `claude plugin install github:owner/repo` shortcut. Both steps are required. Full session note: [[claude-obsidian-v1.4-release-session]].
+## 活跃主题
+- [[个人知识管理]]
+- [[IPO模型]]
+- [[持续输出能力]]
 
-## Recent Release Cycle (v1.1 → v1.4.1)
-- **v1.1**: URL ingestion, vision ingestion, delta tracking manifest, 3 new skills (defuddle, obsidian-bases, obsidian-markdown), multi-depth query modes, PostToolUse auto-commit, removed invalid `allowed-tools` frontmatter field
-- **v1.4.0**: Dataview to Bases migration (new `wiki/meta/dashboard.base`), Canvas JSON 1.0 spec completeness, PostCompact hook, Obsidian CLI MCP option, 6 multi-agent bootstrap files, 249 em dashes scrubbed, security git history rewrite to remove placeholder email
-- **v1.4.1**: hotfix for wrong plugin install command syntax in README and install-guide.md
+## 待办事项
+- [ ] 继续OCR提取课程剩余75页
+- [ ] 按章节创建更多概念页面
+- [ ] 提取具体方法论和工具
 
-## Key Lessons (Recent)
-1. Plugin install is always two-step: `marketplace add` then `install plugin@marketplace`
-2. `allowed-tools` is NOT valid in skill frontmatter. Use only `name` and `description` (kepano convention).
-3. Obsidian Bases uses `filters/views/formulas`, not Dataview `from/where`
-4. Canvas edges have asymmetric defaults: `fromEnd="none"`, `toEnd="arrow"`
-5. Hook-injected context does not survive compaction. PostCompact hook is required to restore hot cache.
-6. `git filter-repo` needs two passes: `--replace-text` for blobs, `--replace-message` for commit messages
-
-## Style Preferences (Saved to Memory)
-- **No em dashes** (U+2014) or `--` as punctuation anywhere. Use periods, commas, colons, or parentheses. Hyphens in compound words are fine (auto-commit, multi-agent).
-- Keep responses short and direct. No trailing "here's what I did" summaries.
-- Parallel tool calls when independent.
-
-## Ecosystem Research (Done 2026-04-08)
-16+ Claude + Obsidian projects mapped. Full feature matrix at [[claude-obsidian-ecosystem]]. Prioritized backlog at [[cherry-picks]]. Top competitors: [[Ar9av-obsidian-wiki]] (multi-agent + delta tracking), [[rvk7895-llm-knowledge-bases]] (multi-depth query), [[ballred-obsidian-claude-pkm]] (goal cascade + auto-commit), [[kepano-obsidian-skills]] (authoritative Obsidian skills from Obsidian's own creator).
-
-## Active Threads
-- v1.5.0 backlog: `/adopt` command, vault graph analysis in wiki-lint, semantic search via qmd, Marp output
-- `community` remote (`avalonreset-pro/claude-obsidian`) still has pre-rewrite history. Force-push needed next time that remote is configured.
-
-## Repo Locations
-- Working: `~/Desktop/claude-obsidian/`
-- Public: https://github.com/AgriciDaniel/claude-obsidian
-- Community (private): https://github.com/avalonreset-pro/claude-obsidian
+## 技能改进完成
+- ✅ P0: 6种维基模式、类型特定Frontmatter、批量摄取、上下文管理、完善Lint、REST API
+- ✅ P1: Canvas支持、Dataview仪表板、跨项目引用
+- ✅ P2: Git增强、视觉定制CSS
+- ✅ 创建完整使用指南飞书文档

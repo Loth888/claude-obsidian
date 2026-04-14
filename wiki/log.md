@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-04-08
+updated: 2026-04-14
 tags:
   - meta
   - log
@@ -24,6 +24,15 @@ Entry format: `## [YYYY-MM-DD] operation | Title`
 Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
+
+## [2026-04-14] ingest | 一堂知识管理课程
+- Type: ingest
+- Source: `.raw/一堂知识管理课程.pdf` (76 pages)
+- Method: OCR extraction (page 1)
+- Pages created: [[个人知识管理]], [[IPO模型]], [[持续输出能力]], [[一堂知识管理课程]]
+- Key concepts: 个人知识管理, IPO模型, 持续输出能力
+- Key findings: 知识管理三大困扰（缺少审美、信息过载、收藏不用），知识留存率仅1%
+- Note: Full 76-page OCR pending; continue extraction for more content
 
 ## [2026-04-08] save | claude-obsidian v1.4 Release Session
 - Type: session
