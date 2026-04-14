@@ -23,7 +23,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-14 | Total pages: 30 | Sources ingested: 3
+Last updated: 2026-04-14 | Total pages: 33 | Sources ingested: 4
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
 
@@ -31,6 +31,8 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 
 ## Concepts
 
+- [[知识力]] — 展示、发挥、发现、学习、创造知识的能力，知识工作者的核心竞争力 (status: developing)
+- [[五个知识问题]] — 学习、保存、共享、使用、创新的知识管理五步法 (status: developing)
 - [[个人知识管理]] — 个人对知识的获取、整理、存储、加工和输出的系统化流程 (status: developing)
 - [[IPO模型]] — 输入-处理-输出的知识生产流程 (status: developing)
 - [[持续输出能力]] — 长期、稳定地将知识转化为作品的能力 (status: developing)
@@ -43,6 +45,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 
 ## Entities
 
+- [[田志刚]] — 知识管理专家、作家，《你的知识需要管理》作者 (status: developing)
 - [[Andrej Karpathy]] — AI researcher, creator of the LLM Wiki pattern, former Tesla AI director (status: developing)
 - [[Ar9av-obsidian-wiki]] — multi-agent compatible LLM Wiki plugin; delta tracking manifest (status: current)
 - [[Nexus-claudesidian-mcp]] — native Obsidian plugin + MCP bridge; workspace memory, task management (status: current)
@@ -55,6 +58,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 
 ## Sources
 
+- [[你的知识需要管理_田志刚]] — 2026-04-14 | 田志刚专著，五步打造个人知识力 | 3 wiki pages created
 - [[一堂知识管理课程]] — 2026-04-14 | 一堂在线课程，76页PDF | 3 wiki pages created
 - [[claude-obsidian-ecosystem-research]] — 2026-04-08 | web research across 16+ repos | 8 wiki pages created
 

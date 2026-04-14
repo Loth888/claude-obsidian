@@ -25,6 +25,18 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-04-14] ingest | 你的知识需要管理（田志刚）
+- Type: ingest
+- Source: `.raw/你的知识需要管理_田志刚.pdf`
+- Method: Text extraction from user-provided preview
+- Pages created: [[知识力]], [[五个知识问题]], [[田志刚]], [[你的知识需要管理_田志刚]]
+- Key concepts: 知识力, 五个知识问题（学习、保存、共享、使用、创新）
+- Key findings: 
+  - 无知的新定义：不是没知识，而是不会用
+  - 未来 = 知识管理能力
+  - 五步打造个人知识力框架
+  - 学习必须达到一定深度，否则只是常识
+
 ## [2026-04-14] ingest | 一堂知识管理课程
 - Type: ingest
 - Source: `.raw/一堂知识管理课程.pdf` (76 pages)
