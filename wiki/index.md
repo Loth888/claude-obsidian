@@ -23,7 +23,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-14 | Total pages: 33 | Sources ingested: 4
+Last updated: 2026-04-14 | Total pages: 37 | Sources ingested: 4
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
 
@@ -36,6 +36,9 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 - [[个人知识管理]] — 个人对知识的获取、整理、存储、加工和输出的系统化流程 (status: developing)
 - [[IPO模型]] — 输入-处理-输出的知识生产流程 (status: developing)
 - [[持续输出能力]] — 长期、稳定地将知识转化为作品的能力 (status: developing)
+- [[知识共享]] — 让别人知道你知道，建立个人品牌的过程 (status: developing)
+- [[知识使用]] — 将知识转化为实际价值的过程 (status: developing)
+- [[知识创新]] — 在已有知识基础上创造新知识的过程 (status: developing)
 - [[LLM Wiki Pattern]] — the pattern for building persistent, compounding knowledge bases using LLMs (status: mature)
 - [[Hot Cache]] — ~500-word session context file, updated after every ingest and session (status: mature)
 - [[Compounding Knowledge]] — why wiki knowledge grows more valuable over time, unlike RAG (status: mature)

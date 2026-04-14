@@ -25,6 +25,26 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-04-14] ingest | 你的知识需要管理（田志刚）- 完整版
+- Type: ingest (complete)
+- Source: `.raw/你的知识需要管理_田志刚.pdf` (165 pages)
+- Method: Full text extraction via pdftotext
+- Coverage: 100% - All 6 chapters + appendix extracted
+- Pages created (total 7):
+  - [[知识力]] - 核心概念
+  - [[五个知识问题]] - 五步法框架
+  - [[知识共享]] - 第四章完整内容
+  - [[知识使用]] - 第五章完整内容
+  - [[知识创新]] - 第六章完整内容
+  - [[个人知识管理现状测试]] - 附录测试工具
+  - [[田志刚]] - 作者实体
+- Key tools documented:
+  - 奥斯本检核表法（9大类75个问题）
+  - 思维导图（Mind Map）
+  - "外行的忠告"创新方法
+  - 个人知识管理现状测试（10题）
+- Cross-references: Linked to [[一堂知识管理课程]] for comparison
+
 ## [2026-04-14] ingest | 你的知识需要管理（田志刚）
 - Type: ingest
 - Source: `.raw/你的知识需要管理_田志刚.pdf`
