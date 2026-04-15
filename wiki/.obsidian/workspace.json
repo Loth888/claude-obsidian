@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "77c8949c7d3a1b07",
+    "type": "split",
+    "children": [
+      {
+        "id": "fdd7d04a7e90fa47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "28ef54a4daeb3686",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/一堂知识管理课程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "一堂知识管理课程"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "747e1bd179c836a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ee9d3674b848594",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c42a4e3c42153429",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "942224cb5c1e5ce1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ca004630b68e86a6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c09b529fbfd7302d",
+    "type": "split",
+    "children": [
+      {
+        "id": "62811e32a019da80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4cc48b904e32a1e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "51b67e3a92d7dd1c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "03d7b4b4afe5bb0e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "d8740bee968513c9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "cfcca9fc016f1bc3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "28ef54a4daeb3686",
+  "lastOpenFiles": [
+    "concepts/整体理论.md",
+    "concepts/底层思维.md",
+    "concepts/双赢思维.md",
+    "concepts/古典主义.md",
+    "concepts/初学者心态.md",
+    "concepts/内在循环系统.md",
+    "concepts/命与运.md",
+    "concepts/AI上手第一课.md",
+    "concepts/笔记系统.md",
+    "concepts/知彼解己.md",
+    "concepts/五个知识问题.md",
+    "concepts/临界知识.md",
+    "concepts/学习之道.md",
+    "concepts/分析阅读.md",
+    "阅读层次.md",
+    "concepts/保护生产力.md",
+    "concepts/防弹笔记法.md",
+    "concepts/累积更新.md",
+    "concepts/信息处理.md",
+    "concepts/简单精准.md",
+    "concepts/个人知识管理.md",
+    "concepts/主动积极.md",
+    "concepts/主客体二元论.md",
+    "concepts/主题阅读.md",
+    "concepts/生产力.md",
+    "concepts/动态演化.md"
+  ]
+}
