@@ -1,68 +1,198 @@
 ---
 type: meta
-title: "Dashboard"
-updated: 2026-04-08
-tags:
-  - meta
-  - dashboard
+title: "Dataview Dashboard"
+updated: 2026-04-18
+tags: [meta, dashboard]
 status: evergreen
-related:
-  - "[[index]]"
-  - "[[overview]]"
-  - "[[log]]"
-  - "[[concepts/_index]]"
-  - "[[Compounding Knowledge]]"
 ---
 
-# Wiki Dashboard
+# Knowledge Base Dashboard
 
-Navigation: [[index]] | [[overview]] | [[log]] | [[hot]]
-
-The dashboard uses **Obsidian Bases**. A core Obsidian feature shipped in v1.9.10 (August 2025). No plugin install required.
-
-> [!tip] Embedded Bases view
-> The interactive dashboard lives in [[dashboard.base]]. Open that file directly, or use the embed below.
-
-![[dashboard.base]]
+> 📊 实时数据仪表板 - 自动更新
 
 ---
 
-## Legacy Dataview Dashboard (Optional)
+## 📈 概览统计
 
-If you are on Obsidian < 1.9.10 or prefer Dataview, the queries below still work. Just install the Dataview community plugin.
-
-### Recent Activity
-
+### 页面类型分布
 ```dataview
-TABLE type, status, updated FROM "wiki" SORT updated DESC LIMIT 15
+TABLE length(rows) as Count
+FROM "wiki"
+GROUP BY type
 ```
 
-### Seed Pages (Need Development)
-
+### 页面状态分布
 ```dataview
-LIST FROM "wiki" WHERE status = "seed" SORT updated ASC
+TABLE length(rows) as Count
+FROM "wiki"
+GROUP BY status
 ```
 
-### Entities Missing Sources
+---
 
+## 🔄 最近活动
+
+### 最近更新 (15条)
 ```dataview
-LIST FROM "wiki/entities" WHERE !sources OR length(sources) = 0
+TABLE type, status, updated
+FROM "wiki"
+SORT updated DESC
+LIMIT 15
 ```
 
-### Open Questions
-
+### 最近7天摄取的来源
 ```dataview
-LIST FROM "wiki/questions" WHERE status = "developing" OR status = "seed" SORT updated DESC
+TABLE author, date_published, source_type
+FROM "wiki/sources"
+WHERE updated > date(today) - dur(7 days)
+SORT updated DESC
 ```
 
-### Comparisons
+---
 
+## ⚠️ 需要关注
+
+### 🌱 Seed 页面 (待开发)
 ```dataview
-TABLE verdict FROM "wiki/comparisons" SORT updated DESC
+LIST
+FROM "wiki"
+WHERE status = "seed"
+SORT updated ASC
 ```
 
-### Sources
-
+### 📝 Developing 页面 (进行中)
 ```dataview
-TABLE author, date_published, updated FROM "wiki/sources" WHERE type = "source" SORT updated DESC LIMIT 10
+TABLE type, updated
+FROM "wiki"
+WHERE status = "developing"
+SORT updated DESC
 ```
+
+### 📅 陈旧页面 (>30天未更新)
+```dataview
+TABLE updated
+FROM "wiki"
+WHERE updated < date(today) - dur(30 days)
+SORT updated ASC
+```
+
+---
+
+## 🔗 链接健康
+
+### 🔗 孤立页面 (无反链)
+```dataview
+TABLE type, updated
+FROM "wiki"
+WHERE (!file.inlinks OR length(file.inlinks) = 0)
+AND type != "meta"
+AND file.name != "index"
+SORT updated ASC
+```
+
+### 🏷️ 未标签页面 (需要分类)
+```dataview
+TABLE type, status
+FROM "wiki"
+WHERE (!tags OR length(tags) = 0)
+AND type != "meta"
+SORT updated ASC
+```
+
+---
+
+## 📚 来源质量
+
+### 📖 概念缺少来源
+```dataview
+LIST
+FROM "wiki/concepts"
+WHERE !sources OR length(sources) = 0
+```
+
+### 👤 实体缺少来源
+```dataview
+LIST
+FROM "wiki/entities"
+WHERE !sources OR length(sources) = 0
+```
+
+### ⭐ 高可信度来源
+```dataview
+TABLE author, date_published
+FROM "wiki/sources"
+WHERE confidence = "high"
+SORT date_published DESC
+```
+
+---
+
+## 🎯 活跃与优先级
+
+### 🔥 活跃主题 (7天内)
+```dataview
+TABLE type, updated
+FROM "wiki"
+WHERE updated > date(today) - dur(7 days)
+SORT updated DESC
+```
+
+### 🚨 高优先级事项
+```dataview
+TABLE type, status, updated
+FROM "wiki"
+WHERE priority = "high" OR priority = "urgent"
+OR contains(tags, "priority-high")
+OR contains(tags, "todo")
+SORT updated ASC
+```
+
+---
+
+## 📊 分布分析
+
+### 📈 按复杂度分布
+```dataview
+TABLE length(rows) as Count
+FROM "wiki"
+WHERE complexity
+GROUP BY complexity
+```
+
+### 🌍 按领域分布
+```dataview
+TABLE length(rows) as Count
+FROM "wiki"
+WHERE domain
+GROUP BY domain
+```
+
+---
+
+## 💡 使用说明
+
+### 如何刷新数据
+- **自动刷新**: 打开页面时自动更新
+- **手动刷新**: `Ctrl/Cmd + R` 或点击刷新按钮
+- **实时更新**: 文件修改后自动刷新
+
+### 查询语法速查
+| 语法 | 说明 |
+|------|------|
+| `FROM "folder"` | 指定来源文件夹 |
+| `WHERE condition` | 过滤条件 |
+| `SORT field DESC` | 排序 |
+| `LIMIT n` | 限制数量 |
+| `GROUP BY field` | 分组统计 |
+
+### 常用字段
+- `type`: concept / entity / source / meta
+- `status`: seed / developing / mature / archived
+- `updated`: 最后更新日期
+- `tags`: 标签数组
+- `complexity`: basic / intermediate / advanced
+- `domain`: 知识领域
+
+---
+
+*最后更新: 2026-04-18*
