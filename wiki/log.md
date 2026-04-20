@@ -170,3 +170,11 @@ AI编程入门 (核心)
 ## 2026-04-16 《定位》特劳特（完整摄取 - 21 章）
 
 ### 初始摄入
+
+## 2026-04-20 - Vault Health Check
+- Operation: Lint vault
+- Removed: 5 empty concept pages (人生智慧, 趋势投资, 阅读层次, 黄金思维圈, 你的知识需要管理)
+- Fixed: _index.md sources field
+- Current stats: 238 concepts, 4 entities, 18 sources
+- Issues found: 48 orphan pages, 4 seed pages pending
+- Status: 4 empty pages removed, 1 sources field fixed
