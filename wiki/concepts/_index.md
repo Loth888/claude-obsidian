@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Concepts Index"
-updated: 2026-04-07
+updated: 2026-04-20
 tags:
   - meta
   - index
@@ -12,12 +12,8 @@ related:
   - "[[index]]"
   - "[[dashboard]]"
   - "[[Wiki Map]]"
-  - "[[Hot Cache]]"
-  - "[[LLM Wiki Pattern]]"
-  - "[[Compounding Knowledge]]"
-  - "[[LLM Wiki Pattern]]"
-  - "[[Hot Cache]]"
-  - "[[Compounding Knowledge]]"
+sources:
+  - "[[index]]"
 ---
 
 # Concepts Index
